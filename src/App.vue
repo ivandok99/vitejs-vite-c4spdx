@@ -17,14 +17,14 @@ export default {
       //store,
     };
   },
-  computed: {
+  /*computed: {
     messages: async function () {
       //this.visible = false;
       const rawsponse = await fetch('/api/social/messages', {
         method: 'GET',
       });
     },
-  },
+  },*/
 };
 </script>
 
