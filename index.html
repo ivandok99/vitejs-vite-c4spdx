@@ -25,88 +25,80 @@
 
   <body style="display: flex; flex-flow: column; height: 100%">
     <!-- top bar -->
-    <header class="p-3 mb-3 border-bottom">
-      <div class="container">
-        <div
-          class="
-            d-flex
-            flex-wrap
-            align-items-center
-            justify-content-center justify-content-lg-start
-          "
-        >
-          <a
-            href="/"
-            class="
-              d-flex
-              align-items-center
-              mb-2 mb-lg-0
-              text-dark text-decoration-none
-            "
-          >
-            <svg
-              class="bi me-2"
-              width="40"
-              height="32"
-              role="img"
-              aria-label="Bootstrap"
+    <header class="py-1">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><span
+              class="text-white px-2"
+              style="font-size: 27px; background-color: black; font-weight: 600"
+              >S N</span
             >
-              <use xlink:href="#bootstrap"></use>
-            </svg>
           </a>
-
-          <ul
-            class="
-              nav
-              col-12 col-lg-auto
-              me-lg-auto
-              mb-2
-              justify-content-center
-              mb-md-0
-            "
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <li>
-              <a href="#" class="nav-link px-2 link-secondary">Overview</a>
-            </li>
-            <li><a href="#" class="nav-link px-2 link-dark">Inventory</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Customers</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Products</a></li>
-          </ul>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Feed</a>
+              </li>
 
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-            <input
-              type="search"
-              class="form-control"
-              placeholder="Search..."
-              aria-label="Search"
-            />
-          </form>
-
-          <div class="dropdown text-end">
-            <a
-              href="#"
-              class="d-block link-dark text-decoration-none dropdown-toggle"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <img
-                src="https://github.com/mdo.png"
-                alt="mdo"
-                width="32"
-                height="32"
-                class="rounded-circle"
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
               />
-            </a>
-            <ul class="dropdown-menu text-small">
-              <li><a class="dropdown-item" href="#">New project...</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
+              <button class="btn btn-outline-success me-4" type="submit">
+                Search
+              </button>
+            </form>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link me-2" style="font-size: 18px" href="#"
+                  >Login</a
+                >
+              </li>
             </ul>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
     <div
       class="bg-image"
