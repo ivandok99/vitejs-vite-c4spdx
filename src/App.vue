@@ -16,45 +16,10 @@ export default {
 
       //store,
     };
-  },
-  /*computed: {
-    messages: async function () {
-      //this.visible = false;
-      const rawsponse = await fetch('/api/social/messages', {
-        method: 'GET',
-      });
-    },
-  },*/
+  }
 };
 </script>
 
 <template>
-  <div class="w3-panel w3-border w3-round-xlarge">
-    <div class="w3-border-bottom w3-padding">
-      <i id="useri" class="fa fa-user"></i>
-      <span id="topbar" class="w3-margin-right">{{ user }}</span>
-      <i id="heart" class="fa fa-heart"></i>
-      <span id="topbar">{{ likes }}</span>
-      <span class="w3-right">{{ date }}</span>
-    </div>
-    <p>{{ messages[0] }}</p>
-  </div>
-</template>
 
-<style>
-#topbar {
-  font-size: 16px;
-  margin-left: 3px;
-}
-#useri {
-  color: grey;
-  font-size: 20px;
-}
-#heart {
-  color: grey;
-  font-size: 20px;
-}
-#heart:hover {
-  color: red;
-}
-</style>
+</template>

@@ -4,7 +4,6 @@
     <title>W3.CSS Template</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -90,11 +89,54 @@
               </button>
             </form>
             <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link me-2" style="font-size: 18px" href="#"
-                  >Login</a
+              <div class="container-fluid dropdown">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-bs-auto-close="outside"
                 >
-              </li>
+                  Login
+                </button>
+                <form class="dropdown-menu dropdown-menu-lg-end p-4" style="width:300px">
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormEmail2" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleDropdownFormEmail2"
+                      placeholder="email@example.com"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormPassword2" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleDropdownFormPassword2"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="dropdownCheck2"
+                      />
+                      <label class="form-check-label" for="dropdownCheck2">
+                        Remember me
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </form>
+              </div>
             </ul>
           </div>
         </div>
